@@ -22,8 +22,7 @@ function ToDoItem(props) {
 		<li
 			className={`list-group-item d-flex justify-content-between aligh-items-center py-3 bd-callout bd-callout-${
 				props.toDoItem.completed ? "success" : "warning"
-			}`}
-		>
+			}`}>
 			{editMode ? (
 				<EditToDo
 					closeEditForm={() => setEditMode(false)}
@@ -38,18 +37,15 @@ function ToDoItem(props) {
 					<div className="btn-group">
 						<button
 							className="btn btn-info -btn-info rounded-0"
-							onClick={handleClickToggle}
-						>
+							onClick={handleClickToggle}>
 							<i
 								className={`fas fa-toggle-${
 									props.toDoItem.completed ? "on" : "off"
-								}`}
-							></i>
+								}`}></i>
 						</button>
 						<button
 							className="btn btn-danger -btn-info rounded-0"
-							onClick={handleClickDelete}
-						>
+							onClick={handleClickDelete}>
 							<i className="fas fa-trash-alt"></i>
 						</button>
 					</div>
